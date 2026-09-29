@@ -1,0 +1,112 @@
+.rpc-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  font-size: var(--rpc-font-size);
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: var(--rpc-radius);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+}
+
+/* 尺寸 */
+.rpc-button--small {
+  padding: 7px 12px;
+  font-size: var(--rpc-font-size-sm);
+}
+.rpc-button--medium {
+  padding: 9px 16px;
+}
+.rpc-button--large {
+  padding: 11px 20px;
+  font-size: var(--rpc-font-size-lg);
+}
+
+/* 类型配色 */
+.rpc-button--default {
+  background: var(--rpc-bg-color);
+  border-color: var(--rpc-border-color);
+  color: var(--rpc-text-color);
+}
+.rpc-button--default:hover {
+  border-color: var(--rpc-color-primary);
+  color: var(--rpc-color-primary);
+}
+.rpc-button--primary {
+  background: var(--rpc-color-primary);
+  color: #fff;
+}
+.rpc-button--primary:hover {
+  opacity: 0.9;
+}
+.rpc-button--success {
+  background: var(--rpc-color-success);
+  color: #fff;
+}
+.rpc-button--warning {
+  background: var(--rpc-color-warning);
+  color: #fff;
+}
+.rpc-button--danger {
+  background: var(--rpc-color-danger);
+  color: #fff;
+}
+.rpc-button--success,
+.rpc-button--warning,
+.rpc-button--danger {
+  transition: opacity 0.2s;
+}
+.rpc-button--success:hover,
+.rpc-button--warning:hover,
+.rpc-button--danger:hover {
+  opacity: 0.9;
+}
+
+/* 朴素按钮：浅色背景 + 主题色文字描边 */
+.rpc-button--plain {
+  background: var(--rpc-color-primary-light);
+  border-color: var(--rpc-color-primary);
+  color: var(--rpc-color-primary);
+}
+
+.rpc-button--round {
+  border-radius: var(--rpc-radius-round);
+}
+.rpc-button--block {
+  display: flex;
+  width: 100%;
+}
+
+.rpc-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* 加载中图标：CSS 旋转圈 */
+.rpc-button__loading {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rpc-button-spin 0.8s linear infinite;
+}
+.rpc-button__icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes rpc-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

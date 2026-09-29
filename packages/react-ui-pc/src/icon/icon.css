@@ -1,0 +1,14 @@
+.rpc-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.rpc-icon--spin {
+  animation: rpc-icon-spin 1s linear infinite;
+}
+@keyframes rpc-icon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

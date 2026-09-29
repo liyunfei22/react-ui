@@ -1,0 +1,45 @@
+.rh5-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  font-size: var(--rh5-font-size-sm);
+  line-height: 20px;
+  border-radius: var(--rh5-radius-sm);
+  border: 1px solid var(--rh5-border-color);
+  color: var(--rh5-text-color);
+  background: var(--rh5-bg-color);
+}
+.rh5-tag--primary {
+  background: var(--rh5-color-primary-light);
+  border-color: var(--rh5-color-primary);
+  color: var(--rh5-color-primary);
+}
+.rh5-tag--success {
+  background: rgba(82, 196, 26, 0.1);
+  border-color: var(--rh5-color-success);
+  color: var(--rh5-color-success);
+}
+.rh5-tag--warning {
+  background: rgba(250, 173, 20, 0.1);
+  border-color: var(--rh5-color-warning);
+  color: var(--rh5-color-warning);
+}
+.rh5-tag--danger {
+  background: rgba(255, 77, 79, 0.1);
+  border-color: var(--rh5-color-danger);
+  color: var(--rh5-color-danger);
+}
+.rh5-tag--round {
+  border-radius: var(--rh5-radius-round);
+}
+.rh5-tag__close {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.rh5-tag__close:hover {
+  opacity: 1;
+}

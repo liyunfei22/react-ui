@@ -1,0 +1,116 @@
+.rh5-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  font-size: var(--rh5-font-size);
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: var(--rh5-radius);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s,
+    color 0.2s,
+    opacity 0.2s;
+}
+
+/* 尺寸 */
+.rh5-button--small {
+  padding: 7px 12px;
+  font-size: var(--rh5-font-size-sm);
+}
+.rh5-button--medium {
+  padding: 9px 16px;
+}
+.rh5-button--large {
+  padding: 11px 20px;
+  font-size: var(--rh5-font-size-lg);
+}
+
+/* 类型配色 */
+.rh5-button--default {
+  background: var(--rh5-bg-color);
+  border-color: var(--rh5-border-color);
+  color: var(--rh5-text-color);
+}
+.rh5-button--default:hover {
+  border-color: var(--rh5-color-primary);
+  color: var(--rh5-color-primary);
+}
+.rh5-button--primary {
+  background: var(--rh5-color-primary);
+  color: #fff;
+}
+.rh5-button--primary:hover {
+  opacity: 0.9;
+}
+.rh5-button--success {
+  background: var(--rh5-color-success);
+  color: #fff;
+}
+.rh5-button--warning {
+  background: var(--rh5-color-warning);
+  color: #fff;
+}
+.rh5-button--danger {
+  background: var(--rh5-color-danger);
+  color: #fff;
+}
+.rh5-button--success,
+.rh5-button--warning,
+.rh5-button--danger {
+  transition: opacity 0.2s;
+}
+.rh5-button--success:hover,
+.rh5-button--warning:hover,
+.rh5-button--danger:hover {
+  opacity: 0.9;
+}
+
+/* 朴素按钮：浅色背景 + 主题色文字描边 */
+.rh5-button--plain {
+  background: var(--rh5-color-primary-light);
+  border-color: var(--rh5-color-primary);
+  color: var(--rh5-color-primary);
+}
+
+.rh5-button--round {
+  border-radius: var(--rh5-radius-round);
+}
+.rh5-button--block {
+  display: flex;
+  width: 100%;
+}
+
+.rh5-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* 加载中图标：CSS 旋转圈 */
+.rh5-button__loading {
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rh5-button-spin 0.8s linear infinite;
+}
+.rh5-button__icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+@keyframes rh5-button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* H5 触控优化 */
+.rh5-button--small { min-height: 36px; }
+.rh5-button--medium { min-height: 44px; }
+.rh5-button--large { min-height: 50px; }

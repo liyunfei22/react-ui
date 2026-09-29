@@ -1,0 +1,50 @@
+.rh5-input {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 240px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--rh5-border-color);
+  border-radius: var(--rh5-radius);
+  background: var(--rh5-bg-color);
+  transition: border-color 0.2s;
+}
+.rh5-input:hover {
+  border-color: var(--rh5-color-primary);
+}
+.rh5-input--disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.04);
+}
+.rh5-input--disabled .rh5-input__inner {
+  cursor: not-allowed;
+  color: var(--rh5-text-color-secondary);
+}
+
+.rh5-input__inner {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--rh5-font-size);
+  color: var(--rh5-text-color);
+}
+.rh5-input__prefix,
+.rh5-input__suffix {
+  display: inline-flex;
+  align-items: center;
+  color: var(--rh5-text-color-secondary);
+}
+.rh5-input__clear {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--rh5-text-color-secondary);
+}
+.rh5-input__clear:hover {
+  color: var(--rh5-text-color);
+}
+/* H5 触控优化 */
+.rh5-input { height: 44px; }

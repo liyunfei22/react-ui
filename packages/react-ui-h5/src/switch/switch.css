@@ -1,0 +1,59 @@
+.rh5-switch {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 24px;
+  border-radius: 24px;
+  background: var(--rh5-border-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  vertical-align: middle;
+}
+.rh5-switch--small {
+  width: 34px;
+  height: 18px;
+}
+.rh5-switch--large {
+  width: 54px;
+  height: 30px;
+}
+.rh5-switch--checked {
+  background: var(--rh5-color-primary);
+}
+.rh5-switch--disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.rh5-switch__thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.2s;
+}
+.rh5-switch--small .rh5-switch__thumb {
+  width: 14px;
+  height: 14px;
+}
+.rh5-switch--large .rh5-switch__thumb {
+  width: 26px;
+  height: 26px;
+}
+.rh5-switch--checked .rh5-switch__thumb {
+  transform: translateX(20px);
+}
+.rh5-switch--small.rh5-switch--checked .rh5-switch__thumb {
+  transform: translateX(16px);
+}
+.rh5-switch--large.rh5-switch--checked .rh5-switch__thumb {
+  transform: translateX(24px);
+}
+/* H5 触控优化 */
+.rh5-switch { width: 52px; height: 30px; }
+.rh5-switch__thumb { width: 26px; height: 26px; }
+.rh5-switch--checked .rh5-switch__thumb { transform: translateX(22px); }

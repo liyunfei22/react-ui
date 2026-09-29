@@ -1,0 +1,14 @@
+.rh5-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+}
+.rh5-icon--spin {
+  animation: rh5-icon-spin 1s linear infinite;
+}
+@keyframes rh5-icon-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

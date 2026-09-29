@@ -1,0 +1,81 @@
+.rpc-dialog__wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: var(--rpc-zindex-popup);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rpc-bg-color-mask);
+}
+.rpc-dialog {
+  display: flex;
+  flex-direction: column;
+  max-width: 80vw;
+  max-height: 80vh;
+  background: var(--rpc-bg-color);
+  border-radius: var(--rpc-radius);
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+.rpc-dialog__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  font-size: var(--rpc-font-size-lg);
+  font-weight: 600;
+  color: var(--rpc-text-color);
+}
+.rpc-dialog__close {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--rpc-text-color-secondary);
+}
+.rpc-dialog__body {
+  padding: 0 20px 20px;
+  color: var(--rpc-text-color);
+  overflow-y: auto;
+}
+.rpc-dialog__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 12px 20px 16px;
+}
+.rpc-dialog__btn {
+  padding: 8px 16px;
+  border: 1px solid var(--rpc-border-color);
+  border-radius: var(--rpc-radius);
+  background: var(--rpc-bg-color);
+  color: var(--rpc-text-color);
+  cursor: pointer;
+}
+.rpc-dialog__btn--primary {
+  border-color: var(--rpc-color-primary);
+  background: var(--rpc-color-primary);
+  color: #fff;
+}
+.rpc-dialog__message {
+  word-break: break-all;
+}
+
+/* 过渡：遮罩淡入淡出 + 弹窗缩放 */
+.rpc-dialog-enter-active,
+.rpc-dialog-leave-active {
+  transition: opacity 0.2s;
+}
+.rpc-dialog-enter-active .rpc-dialog,
+.rpc-dialog-leave-active .rpc-dialog {
+  transition: transform 0.2s;
+}
+.rpc-dialog-enter-from,
+.rpc-dialog-leave-to {
+  opacity: 0;
+}
+.rpc-dialog-enter-from .rpc-dialog,
+.rpc-dialog-leave-to .rpc-dialog {
+  transform: scale(0.9);
+}

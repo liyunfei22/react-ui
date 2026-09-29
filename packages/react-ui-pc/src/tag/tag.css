@@ -1,0 +1,45 @@
+.rpc-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  font-size: var(--rpc-font-size-sm);
+  line-height: 20px;
+  border-radius: var(--rpc-radius-sm);
+  border: 1px solid var(--rpc-border-color);
+  color: var(--rpc-text-color);
+  background: var(--rpc-bg-color);
+}
+.rpc-tag--primary {
+  background: var(--rpc-color-primary-light);
+  border-color: var(--rpc-color-primary);
+  color: var(--rpc-color-primary);
+}
+.rpc-tag--success {
+  background: rgba(82, 196, 26, 0.1);
+  border-color: var(--rpc-color-success);
+  color: var(--rpc-color-success);
+}
+.rpc-tag--warning {
+  background: rgba(250, 173, 20, 0.1);
+  border-color: var(--rpc-color-warning);
+  color: var(--rpc-color-warning);
+}
+.rpc-tag--danger {
+  background: rgba(255, 77, 79, 0.1);
+  border-color: var(--rpc-color-danger);
+  color: var(--rpc-color-danger);
+}
+.rpc-tag--round {
+  border-radius: var(--rpc-radius-round);
+}
+.rpc-tag__close {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.rpc-tag__close:hover {
+  opacity: 1;
+}

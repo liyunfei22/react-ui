@@ -1,0 +1,44 @@
+/* ============================================================
+ * react-ui-h5 设计令牌（Design Tokens）
+ * 与 PC 端共享同一套组件结构与变量命名，仅默认值不同。
+ * 前缀统一为 --rh5-（react 组件库 h5 端）。
+ * ============================================================ */
+:root {
+  --rh5-color-primary: #1989fa;
+  --rh5-color-primary-light: #ecf5ff;
+  --rh5-color-success: #07c160;
+  --rh5-color-warning: #ff976a;
+  --rh5-color-danger: #ee0a24;
+  --rh5-color-info: #969799;
+
+  --rh5-text-color: #323233;
+  --rh5-text-color-secondary: #969799;
+  --rh5-border-color: #ebedf0;
+
+  --rh5-bg-color: #ffffff;
+  --rh5-bg-color-mask: rgba(0, 0, 0, 0.7);
+
+  --rh5-font-size-sm: 12px;
+  --rh5-font-size: 15px;
+  --rh5-font-size-lg: 17px;
+
+  --rh5-radius-sm: 6px;
+  --rh5-radius: 10px;
+  --rh5-radius-round: 999px;
+
+  --rh5-zindex-mask: 1000;
+  --rh5-zindex-popup: 1001;
+}
+
+/* 暗色模式 */
+[data-theme='dark'] {
+  --rh5-color-primary: #4da3ff;
+  --rh5-color-primary-light: #17263f;
+
+  --rh5-text-color: #e5eaf3;
+  --rh5-text-color-secondary: #a3a6ad;
+  --rh5-border-color: #4c4d4f;
+
+  --rh5-bg-color: #141414;
+  --rh5-bg-color-mask: rgba(0, 0, 0, 0.75);
+}

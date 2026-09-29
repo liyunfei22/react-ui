@@ -1,0 +1,44 @@
+/* ============================================================
+ * react-ui-pc 设计令牌（Design Tokens）
+ * 所有组件只引用这里的 CSS 变量，换肤/暗色模式只需覆盖变量。
+ * 前缀统一为 --rpc-（react 组件库 pc 端）。
+ * ============================================================ */
+:root {
+  --rpc-color-primary: #1677ff;
+  --rpc-color-primary-light: #e8f3ff;
+  --rpc-color-success: #52c41a;
+  --rpc-color-warning: #faad14;
+  --rpc-color-danger: #ff4d4f;
+  --rpc-color-info: #909399;
+
+  --rpc-text-color: #303133;
+  --rpc-text-color-secondary: #909399;
+  --rpc-border-color: #dcdfe6;
+
+  --rpc-bg-color: #ffffff;
+  --rpc-bg-color-mask: rgba(0, 0, 0, 0.45);
+
+  --rpc-font-size-sm: 12px;
+  --rpc-font-size: 14px;
+  --rpc-font-size-lg: 16px;
+
+  --rpc-radius-sm: 4px;
+  --rpc-radius: 6px;
+  --rpc-radius-round: 999px;
+
+  --rpc-zindex-mask: 1000;
+  --rpc-zindex-popup: 1001;
+}
+
+/* 暗色模式：在 <html data-theme="dark"> 下自动生效 */
+[data-theme='dark'] {
+  --rpc-color-primary: #4096ff;
+  --rpc-color-primary-light: #17263f;
+
+  --rpc-text-color: #e5eaf3;
+  --rpc-text-color-secondary: #a3a6ad;
+  --rpc-border-color: #4c4d4f;
+
+  --rpc-bg-color: #141414;
+  --rpc-bg-color-mask: rgba(0, 0, 0, 0.6);
+}

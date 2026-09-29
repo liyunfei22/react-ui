@@ -1,0 +1,37 @@
+.demo-block {
+  margin: 16px 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.demo-block__preview {
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  background: var(--vp-c-bg-soft);
+}
+.demo-block__meta {
+  padding: 10px 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.demo-block__title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.demo-block__desc {
+  font-size: 13px;
+  color: var(--vp-c-text-2);
+}
+/* React demo 经 ReactDemo 桥接渲染在单个 div 内，这里补上 flex 排版 */
+.react-demo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}

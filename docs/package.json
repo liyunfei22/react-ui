@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.0",
+    "vitepress": "^1.6.0"
+  },
+  "dependencies": {
+    "@react-ui/pc": "workspace:*",
+    "@react-ui/h5": "workspace:*",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  }
+}
